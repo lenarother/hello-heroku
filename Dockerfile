@@ -11,4 +11,4 @@ WORKDIR /project
 
 # EXPOSE 8000
 # CMD ["gunicorn", "--bind", ":8000", "--workers", "3", "teachertools.wsgi:application"]
-CMD gunicorn teachertools.wsgi:application --bind 0.0.0.0:$PORT
+CMD gunicorn hello_world.wsgi:application --bind 0.0.0.0:$PORT
