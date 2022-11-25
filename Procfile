@@ -1,2 +1,2 @@
-release: python manage.py migrate
-web: gunicorn hello_world.wsgi
+release: python src/manage.py migrate
+web: gunicorn src.hello_world.wsgi
